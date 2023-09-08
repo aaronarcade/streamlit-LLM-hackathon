@@ -5,11 +5,22 @@ import openai
 from llama_index import SimpleDirectoryReader
 
 openai.api_key = st.secrets.openai_key
-st.header("Chat with the WDI bot 💬👷‍♀️✨")
+
+"# WDI Historian Chatbot 💬👷‍♀️✨"
+
+"""
+This app is an example of an openai-powered chatbot using
+llama index.
+
+View the full app code
+[here](https://github.com/aaronarcade/streamlit-LLM-hackathon).
+Disney information sources: [D23 - Disney Archives](https://d23.com/walt-disney-archives/).
+"""
 
 if "messages" not in st.session_state.keys(): # Initialize the chat message history
     st.session_state.messages = [
-        {"role": "assistant", "content": "Ask me a question about WED or Imagineering!"}
+        {"role": "assistant", "content": "Ask me a question about WED or Imagineering!"},
+        {"role": "assistant", "content": "Examples: What is WDI? Who is John Hench? What are Mickey's Ten Commandments?"}
     ]
 
 @st.cache_resource(show_spinner=False)

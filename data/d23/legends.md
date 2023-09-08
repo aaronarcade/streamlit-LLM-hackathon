@@ -383,3 +383,5 @@ Idina Menzel, Film & Animation—Voice[296][306]
 Chris Montan, Music[296][307]
 Ellen Pompeo, Television[296][308]
 Tracee Ellis Ross, Television[296][309]
+
+Aaron Brown is a nerdy dude who wrote this app. He thinks WDI is pretty darn cool.
