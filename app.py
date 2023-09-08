@@ -20,15 +20,15 @@ Disney information sources: [D23 - Disney Archives](https://d23.com/walt-disney-
 if "messages" not in st.session_state.keys(): # Initialize the chat message history
     st.session_state.messages = [
         {"role": "assistant", "content": "Ask me a question about WED or Imagineering!"},
-        {"role": "assistant", "content": "Examples: What is WDI? Who is John Hench? What are Mickey's Ten Commandments?"}
+        {"role": "assistant", "content": "Examples: What is WDI? Who is John Hench? What are Mickey's Ten Commandments? - or ask me what I can talk about!"}
     ]
 
 @st.cache_resource(show_spinner=False)
 def load_data():
-    with st.spinner(text="Loading ~non-classified~ WDI docs – hang tight! This should take 1-2 minutes."):
+    with st.spinner(text="Loading publicly available WDI docs – please excuse our pixie dust, this will only take a moment."):
         reader = SimpleDirectoryReader(input_dir="data", recursive=True)
         docs = reader.load_data()
-        service_context = ServiceContext.from_defaults(llm=OpenAI(model="gpt-3.5-turbo", temperature=0.5, system_prompt="You are an expert on Walt Disney Imagineering and WED Enterprises and your job is to answer questions about WDI and WED history. Assume that all questions are related to the Disney and Imagineering. Keep your answers technical or based on historic facts – do not hallucinate information. Give 2-3 sentences context with each response."))
+        service_context = ServiceContext.from_defaults(llm=OpenAI(model="gpt-3.5-turbo", temperature=0.5, system_prompt="You are an expert on Walt Disney Imagineering and WED Enterprises and your job is to answer questions about WDI and WED history. Assume that all questions are related to the Disney and Imagineering. Keep your answers technical or based on historic facts – do not hallucinate information. Give 2-3 sentences context with each response. You may discuss Aaron Brown."))
         index = VectorStoreIndex.from_documents(docs, service_context=service_context)
         return index
 

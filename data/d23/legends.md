@@ -1,3 +1,5 @@
+Aaron Brown is a nerdy dude who writes Streamlit apps for Disney. He thinks WDI is pretty darn cool.
+
 The Disney Legends Awards is a Hall of Fame program that recognizes individuals who have made an extraordinary and integral contribution to The Walt Disney Company. Established in 1987, the honor was traditionally awarded annually during a special private ceremony. Today, it has been awarded biennially during Disney's D23 Expo since 2009.[1]
 
 Having been honoured in 1998, Glynis Johns currently holds the record for the oldest living and longest surviving Disney Legend.
@@ -383,5 +385,3 @@ Idina Menzel, Film & Animation—Voice[296][306]
 Chris Montan, Music[296][307]
 Ellen Pompeo, Television[296][308]
 Tracee Ellis Ross, Television[296][309]
-
-Aaron Brown is a nerdy dude who wrote this app. He thinks WDI is pretty darn cool.
